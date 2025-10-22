@@ -1,9 +1,9 @@
 [submodule "recorder"]
 	path = recorder
-	url = https://github.com/c3d/recorder.git
+	url = git@github.com:c3d/recorder.git
 [submodule "dmcp5"]
 	path = dmcp5
-	url = https://github.com/c3d/DMCP5_SDK.git
+	url = git@github.com:LdBeth/DMCP5_SDK.git
 [submodule "dmcp"]
 	path = dmcp
 	url = https://github.com/c3d/SDKdemo.git
