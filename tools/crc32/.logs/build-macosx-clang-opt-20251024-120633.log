@@ -1,0 +1,9 @@
+[BEGIN]          opt macosx-clang in [top][dm32]                               
+true &&  mkdir -p /Users/ldbeth/Public/Projects/db48x/tools/crc32/.build/macosx-clang/opt && touch /Users/ldbeth/Public/Projects/db48x/tools/crc32/.build/macosx-clang/opt/.mkdir
+true &&  mkdir -p /Users/ldbeth/Public/Projects/db48x/tools/crc32/.build/macosx-clang/opt/crc32.deps && touch /Users/ldbeth/Public/Projects/db48x/tools/crc32/.build/macosx-clang/opt/crc32.deps/.mkdir
+true &&  mkdir -p /Users/ldbeth/Public/Projects/db48x/tools/crc32
+true &&  printf "%-16s %-56s%6s\n" "[COMPILE  1/1] " crc32.c; gcc	 -MD -MP -MF "/Users/ldbeth/Public/Projects/db48x/tools/crc32/.build/macosx-clang/opt/crc32.c.o.d" -MT "\$(MIQ_OBJDIR)crc32.c.o" -std=gnu11	-fPIC -DCONFIG_MACOSX -DDEBUG -DOPTIMIZED         -g -O3 -Wall  	-c crc32.c -o /Users/ldbeth/Public/Projects/db48x/tools/crc32/.build/macosx-clang/opt/crc32.c.o
+[COMPILE  1/1]   crc32.c                                                       
+true &&  printf "%-16s %-56s%6s\n" "[LINK]" crc32; gcc		 /Users/ldbeth/Public/Projects/db48x/tools/crc32/.build/macosx-clang/opt/crc32.c.o -L/Users/ldbeth/Public/Projects/db48x/tools/crc32/     -framework CoreFoundation -framework CoreServices   -Wl,-rpath,. -Wl,-rpath,/Users/ldbeth/Public/Projects/db48x/tools/crc32/ -Wl,-rpath,/usr/local/lib/  -o /Users/ldbeth/Public/Projects/db48x/tools/crc32/crc32
+[LINK]           crc32                                                         
+[END]            opt macosx-clang in [top][dm32]                               
